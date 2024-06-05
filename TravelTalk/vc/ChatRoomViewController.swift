@@ -47,8 +47,9 @@ extension ChatRoomViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MyChatTableViewCell.identifier, for: indexPath)
-        guard let data = data else { return MyChatTableViewCell()  }
+        guard data != nil else { return MyChatTableViewCell()  }
      
+        
         
             
         
